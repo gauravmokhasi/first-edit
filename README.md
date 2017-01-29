@@ -2,9 +2,9 @@
 first-edit lets writers know if they are repeating words -- something that they hate doing.
 
 # Background
-Editing long documents is a pain. One of the things I check for while reviewing my online drafts is whether I'm using a particular word too many times. This task ought to be trivial but is actually far from it. I copy-paste the content to Word, and then manually use CTRL-F to find words that I think I might have repeated. This process is not only tedious, but also has the risk of me missing out on some duplicate words that I didn't think of.
+Editing long documents is a pain. One of the things I check for while reviewing my online drafts is whether I'm using a particular word too many times. I manually use CTRL-F to find words that I think I might have repeated. This process has the risk of me missing out on some duplicate words just because I didn't think of them.
 
-first-edit is therefore a quick way for writers to find out if they're using any words too often.
+first-edit is therefore a quick way for writers like me to find out if they're using any words too often.
 
 # Usage
 - Have Python installed on your computer.
