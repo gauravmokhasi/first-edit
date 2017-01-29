@@ -17,8 +17,8 @@ def split_wise(text):
     takes an input string and splits it based on common english delimiters.
     returns a list of words in the string
     """
-    # splitting on: , <space> - ! ? : ; /
-    return filter(None, re.split("[, \-!?:;/]+", text))
+    # splitting on: , <whitespace> - ! ? : ; /
+    return filter(None, re.split("[,\s\-!?:;/]+", text))
     
 def build_dict(list_words, dict_words):
     """
@@ -37,7 +37,7 @@ def clean_up(dict_words, dict_words_copy):
     cleans up the dictionary based on some rules.
     """
     remove_single_words(dict_words, dict_words_copy)
-    remove_common_words(dict_words, dict_words_copy)
+    remove_common_words(dict_words_copy)
 
 def remove_single_words(dict_words, dict_words_copy):
     """
@@ -47,7 +47,7 @@ def remove_single_words(dict_words, dict_words_copy):
         if dict_words[word] == 1:
             del dict_words_copy[word]
 
-def remove_common_words(dict_words, dict_words_copy):
+def remove_common_words(dict_words_copy):
     """
     removes common english words that are not meaningful for analysis.
     user should specify these words in the ignore_words.csv file
@@ -60,7 +60,7 @@ def remove_common_words(dict_words, dict_words_copy):
     ignore_words_file.close()
 
 def create_analysis_file(sorted_word_count):
-    analysis_file = open("analysis_file.txt", 'w')
+    analysis_file = open("analysis_file.txt", 'w+')
     analysis_file.write("Non-common words that appear more than once in your document.\n")
     # add "word: count" to file
     for item in sorted_word_count:
