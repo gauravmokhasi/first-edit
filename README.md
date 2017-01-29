@@ -9,7 +9,7 @@ first-edit is therefore a quick way for writers like me to find out if they're u
 # Usage
 - Have Python installed on your computer.
 - Download this repository to your computer, and unzip to a location of your choice.
-- Copy-Paste the text document you want to analyze to the location you unzipped the repository, i.e. the folder containing first_edit.py and ignore_words.csv.
+- Copy-Paste the text document you want to analyze to the location where you unzipped the repository, i.e. the folder containing first_edit.py and ignore_words.csv.
 - Run first_edit.py. When prompted, type the name of the document you want to analyze. <i>first-edit currently only works with <b>.txt</b> files.</i>
 - See the analysis of your content in analysis_file.txt.
 - If the analysis contains some common words that you want to ignore, you can explicitly specify these words in ignore_words.csv.
