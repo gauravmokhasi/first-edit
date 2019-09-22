@@ -7,10 +7,10 @@ Editing long documents is a pain. One of the things I check for while reviewing 
 first-edit is therefore a quick way for writers like me to find out if they're using any words too often.
 
 # Usage
-- Have Python 2.7+ installed on your computer.
+- Have Python installed on your computer.
 - Download this repository to your computer, and unzip to a location of your choice.
-- Copy-Paste the text document you want to analyze to the location where you unzipped the repository, i.e. the folder containing `first_edit.py` and `ignore_words.csv`.
-- Run `first_edit.py`. When prompted, type the name of the document you want to analyze.
+- Copy-Paste the text document you want to analyze to the location where you unzipped the repository, i.e. the folder containing `first_edit_py2.py`, `first_edit_py3.py` and `ignore_words.csv`.
+- Depending on the version of Python you have (2 or 3), run the appropriate `first_edit` file. When prompted, type the name of the document you want to analyze.
   - first-edit currently only works with <b>.txt</b> files.
 - See the analysis of your content in `analysis_file.txt`.
-- If the analysis contains some common words that you want to ignore, you can explicitly specify these words in `ignore_words.csv`.
+- If the analysis contains some common words that you want to ignore, you can explicitly specify these words in `ignore_words.csv`. Subsequent runs of first edit will not count these words.
